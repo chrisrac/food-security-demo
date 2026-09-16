@@ -250,6 +250,10 @@ COUNTRY_DATA = {
     "United States": {
         "cropland_ha": 155_000_000,
         "population": 343_500_000,
+        "climate": {
+            "mean_temp_c": 9.5,
+            "annual_precip_mm": 760,
+        },
         "yields": {
             "corn": 11.131,
             "wheat": 3.269,
@@ -260,6 +264,10 @@ COUNTRY_DATA = {
     "Italy": {
         "cropland_ha": 9_470_000,
         "population": 59_500_000,
+        "climate": {
+            "mean_temp_c": 13.4,
+            "annual_precip_mm": 830,
+        },
         "yields": {
             "corn": 10.731,
             "wheat": 3.692,
@@ -270,6 +278,10 @@ COUNTRY_DATA = {
     "India": {
         "cropland_ha": 168_000_000,
         "population": 1_438_000_000,
+        "climate": {
+            "mean_temp_c": 24.0,
+            "annual_precip_mm": 1080,
+        },
         "yields": {
             "corn": 3.545,
             "wheat": 3.521,
@@ -280,6 +292,10 @@ COUNTRY_DATA = {
     "Brazil": {
         "cropland_ha": 63_400_000,
         "population": 211_100_000,
+        "climate": {
+            "mean_temp_c": 25.6,
+            "annual_precip_mm": 1756,
+        },
         "yields": {
             "corn": 5.913,
             "wheat": 2.321,
@@ -290,6 +306,10 @@ COUNTRY_DATA = {
     "Kenya": {
         "cropland_ha": 7_450_000,
         "population": 55_339_000,
+        "climate": {
+            "mean_temp_c": 24.3,
+            "annual_precip_mm": 669,
+        },
         "yields": {
             "corn": 1.763,
             "wheat": 2.963,
@@ -300,6 +320,10 @@ COUNTRY_DATA = {
     "Australia": {
         "cropland_ha": 31_375_000,
         "population": 26_451_000,
+        "climate": {
+            "mean_temp_c": 21.8,
+            "annual_precip_mm": 450,
+        },
         "yields": {
             "corn": 4.972,
             "wheat": 3.188,
@@ -416,6 +440,9 @@ TEXT = {
         "cropland": "Cropland",
         "select_country": "👆 Select a country to continue.",
         "next": "NEXT →",
+        "avg_temperature": "Mean annual temperature",
+        "annual_precipitation": "Mean annual precipitation",
+        "climate_normal": "Climate normal: 1991–2020",
 
         # Screen 2
         "design_farms": "🌾 Design the farms",
@@ -506,6 +533,9 @@ TEXT = {
         "cropland": "Terreni coltivabili",
         "select_country": "👆 Seleziona un Paese per continuare.",
         "next": "AVANTI →",
+        "avg_temperature": "Temperatura media annuale",
+        "annual_precipitation": "Precipitazione media annuale",
+        "climate_normal": "Media climatica: 1991–2020",
 
         # Screen 2
         "design_farms": "🌾 Organizza le coltivazioni",
@@ -1205,7 +1235,7 @@ if st.session_state.screen == 1:
 
         st.markdown(f"### {country_label(selected_country)}")
 
-        stat1, stat2 = st.columns(2)
+        stat1, stat2, stat3, stat4 = st.columns(4)
 
         with stat1:
 
@@ -1248,6 +1278,18 @@ if st.session_state.screen == 1:
                 cropland_text = (f"{cropland_value:.1f} million ha")
 
             st.metric(t("cropland"), cropland_text)
+
+        with stat3:
+            st.metric(
+                t("avg_temperature"),
+                f"{info['climate']['mean_temp_c']:.1f} °C"
+            )
+
+        with stat4:
+            st.metric(
+                t("annual_precipitation"),
+                f"{info['climate']['annual_precip_mm']:,.0f} mm"
+            )
 
     else:
 
