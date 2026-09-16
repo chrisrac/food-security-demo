@@ -1,0 +1,62 @@
+{
+    "Australia": {
+        "domestic_supply_1000_t": 28.0,
+        "food_1000_t": 10.0,
+        "feed_1000_t": null,
+        "losses_1000_t": null,
+        "processing_1000_t": 18.0,
+        "other_uses_1000_t": 0.0,
+        "food_share": 0.35714285714285715,
+        "food_kcal_per_kg": 12837.182
+    },
+    "Brazil": {
+        "domestic_supply_1000_t": 8747.0,
+        "food_1000_t": 2868.0,
+        "feed_1000_t": null,
+        "losses_1000_t": null,
+        "processing_1000_t": 585.0,
+        "other_uses_1000_t": 5294.0,
+        "food_share": 0.32788384589001945,
+        "food_kcal_per_kg": 9070.007248953974
+    },
+    "India": {
+        "domestic_supply_1000_t": 5207.0,
+        "food_1000_t": 3117.0,
+        "feed_1000_t": null,
+        "losses_1000_t": null,
+        "processing_1000_t": 57.0,
+        "other_uses_1000_t": 2033.0,
+        "food_share": 0.5986172460149798,
+        "food_kcal_per_kg": 9132.645896695542
+    },
+    "Italy": {
+        "domestic_supply_1000_t": 403.0,
+        "food_1000_t": 400.0,
+        "feed_1000_t": null,
+        "losses_1000_t": null,
+        "processing_1000_t": null,
+        "other_uses_1000_t": 2.0,
+        "food_share": 0.9925558312655087,
+        "food_kcal_per_kg": 9008.211949999999
+    },
+    "Kenya": {
+        "domestic_supply_1000_t": 11.0,
+        "food_1000_t": 11.0,
+        "feed_1000_t": null,
+        "losses_1000_t": null,
+        "processing_1000_t": null,
+        "other_uses_1000_t": null,
+        "food_share": 1.0,
+        "food_kcal_per_kg": 9219.365454545456
+    },
+    "United States": {
+        "domestic_supply_1000_t": 11107.0,
+        "food_1000_t": 4650.0,
+        "feed_1000_t": null,
+        "losses_1000_t": null,
+        "processing_1000_t": 4494.0,
+        "other_uses_1000_t": 1963.0,
+        "food_share": 0.4186549023138561,
+        "food_kcal_per_kg": 15100.5675655914
+    }
+}

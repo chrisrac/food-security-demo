@@ -1,0 +1,212 @@
+{
+    "Australia": {
+        "wheat": {
+            "domestic_supply_1000_t": 11557.0,
+            "food_1000_t": 2499.0,
+            "feed_1000_t": 6733.0,
+            "seed_1000_t": 791.0,
+            "losses_1000_t": 412.0,
+            "processing_1000_t": 87.0,
+            "other_uses_1000_t": 1035.0,
+            "food_share": 0.21623258631132647,
+            "food_kcal_per_kg": 2319.1279471788716
+        },
+        "corn": {
+            "domestic_supply_1000_t": 354.0,
+            "food_1000_t": 135.0,
+            "feed_1000_t": 161.0,
+            "seed_1000_t": 1.0,
+            "losses_1000_t": 2.0,
+            "processing_1000_t": 27.0,
+            "other_uses_1000_t": 28.0,
+            "food_share": 0.3813559322033898,
+            "food_kcal_per_kg": 2862.2862962962963
+        },
+        "soy": {
+            "domestic_supply_1000_t": 54.0,
+            "food_1000_t": 6.0,
+            "feed_1000_t": 2.0,
+            "seed_1000_t": 1.0,
+            "losses_1000_t": 3.0,
+            "processing_1000_t": 42.0,
+            "other_uses_1000_t": null,
+            "food_share": 0.1111111111111111,
+            "food_kcal_per_kg": 2347.23
+        }
+    },
+    "Brazil": {
+        "wheat": {
+            "domestic_supply_1000_t": 12633.0,
+            "food_1000_t": 11520.0,
+            "feed_1000_t": 622.0,
+            "seed_1000_t": 287.0,
+            "losses_1000_t": 263.0,
+            "processing_1000_t": null,
+            "other_uses_1000_t": 10.0,
+            "food_share": 0.9118974115412016,
+            "food_kcal_per_kg": 2485.0176024305556
+        },
+        "corn": {
+            "domestic_supply_1000_t": 71110.0,
+            "food_1000_t": 6175.0,
+            "feed_1000_t": 51296.0,
+            "seed_1000_t": 364.0,
+            "losses_1000_t": 13328.0,
+            "processing_1000_t": 58.0,
+            "other_uses_1000_t": null,
+            "food_share": 0.08683729433272395,
+            "food_kcal_per_kg": 3034.6350898785427
+        },
+        "soy": {
+            "domestic_supply_1000_t": 59180.0,
+            "food_1000_t": 0.0,
+            "feed_1000_t": 746.0,
+            "seed_1000_t": 2292.0,
+            "losses_1000_t": 6086.0,
+            "processing_1000_t": 54094.0,
+            "other_uses_1000_t": null,
+            "food_share": 0.0,
+            "food_kcal_per_kg": null
+        }
+    },
+    "India": {
+        "wheat": {
+            "domestic_supply_1000_t": 112236.0,
+            "food_1000_t": 95634.0,
+            "feed_1000_t": 6906.0,
+            "seed_1000_t": 3027.0,
+            "losses_1000_t": 6721.0,
+            "processing_1000_t": null,
+            "other_uses_1000_t": null,
+            "food_share": 0.8520795466695178,
+            "food_kcal_per_kg": 3102.3218682686074
+        },
+        "corn": {
+            "domestic_supply_1000_t": 34264.0,
+            "food_1000_t": 9380.0,
+            "feed_1000_t": 20708.0,
+            "seed_1000_t": 1098.0,
+            "losses_1000_t": 1781.0,
+            "processing_1000_t": 1289.0,
+            "other_uses_1000_t": 7.0,
+            "food_share": 0.27375671258463696,
+            "food_kcal_per_kg": 3122.930818763326
+        },
+        "soy": {
+            "domestic_supply_1000_t": 15316.0,
+            "food_1000_t": 267.0,
+            "feed_1000_t": 3360.0,
+            "seed_1000_t": 808.0,
+            "losses_1000_t": 1113.0,
+            "processing_1000_t": 9768.0,
+            "other_uses_1000_t": null,
+            "food_share": 0.0174327500652912,
+            "food_kcal_per_kg": 4014.037490636704
+        }
+    },
+    "Italy": {
+        "wheat": {
+            "domestic_supply_1000_t": 10839.0,
+            "food_1000_t": 8321.0,
+            "feed_1000_t": 1602.0,
+            "seed_1000_t": 605.0,
+            "losses_1000_t": 146.0,
+            "processing_1000_t": 129.0,
+            "other_uses_1000_t": 81.0,
+            "food_share": 0.7676907463788172,
+            "food_kcal_per_kg": 2493.8758045907944
+        },
+        "corn": {
+            "domestic_supply_1000_t": 12423.0,
+            "food_1000_t": 183.0,
+            "feed_1000_t": 10582.0,
+            "seed_1000_t": 27.0,
+            "losses_1000_t": 116.0,
+            "processing_1000_t": 1326.0,
+            "other_uses_1000_t": 392.0,
+            "food_share": 0.014730741366819608,
+            "food_kcal_per_kg": 2808.3392896174864
+        },
+        "soy": {
+            "domestic_supply_1000_t": 3383.0,
+            "food_1000_t": 3.0,
+            "feed_1000_t": 50.0,
+            "seed_1000_t": 26.0,
+            "losses_1000_t": 33.0,
+            "processing_1000_t": 3271.0,
+            "other_uses_1000_t": null,
+            "food_share": 0.0008867868755542418,
+            "food_kcal_per_kg": 2047.8266666666666
+        }
+    },
+    "Kenya": {
+        "wheat": {
+            "domestic_supply_1000_t": 1766.0,
+            "food_1000_t": 1461.0,
+            "feed_1000_t": 70.0,
+            "seed_1000_t": 8.0,
+            "losses_1000_t": 51.0,
+            "processing_1000_t": 34.0,
+            "other_uses_1000_t": 160.0,
+            "food_share": 0.8272933182332955,
+            "food_kcal_per_kg": 2627.666413415469
+        },
+        "corn": {
+            "domestic_supply_1000_t": 4324.0,
+            "food_1000_t": 3374.0,
+            "feed_1000_t": 681.0,
+            "seed_1000_t": 74.0,
+            "losses_1000_t": 128.0,
+            "processing_1000_t": 16.0,
+            "other_uses_1000_t": 51.0,
+            "food_share": 0.7802960222016652,
+            "food_kcal_per_kg": 3176.997228808536
+        },
+        "soy": {
+            "domestic_supply_1000_t": 12.0,
+            "food_1000_t": 9.0,
+            "feed_1000_t": 2.0,
+            "seed_1000_t": 1.0,
+            "losses_1000_t": 0.0,
+            "processing_1000_t": null,
+            "other_uses_1000_t": null,
+            "food_share": 0.75,
+            "food_kcal_per_kg": 3929.1111111111113
+        }
+    },
+    "United States": {
+        "wheat": {
+            "domestic_supply_1000_t": 37693.0,
+            "food_1000_t": 30542.0,
+            "feed_1000_t": 2903.0,
+            "seed_1000_t": 1735.0,
+            "losses_1000_t": 2275.0,
+            "processing_1000_t": 154.0,
+            "other_uses_1000_t": 57.0,
+            "food_share": 0.81028307643329,
+            "food_kcal_per_kg": 2459.873977146225
+        },
+        "corn": {
+            "domestic_supply_1000_t": 335008.0,
+            "food_1000_t": 3705.0,
+            "feed_1000_t": 146685.0,
+            "seed_1000_t": 787.0,
+            "losses_1000_t": 18681.0,
+            "processing_1000_t": 39887.0,
+            "other_uses_1000_t": 125234.0,
+            "food_share": 0.011059437386569873,
+            "food_kcal_per_kg": 2705.048180836707
+        },
+        "soy": {
+            "domestic_supply_1000_t": 67770.0,
+            "food_1000_t": 8.0,
+            "feed_1000_t": 1713.0,
+            "seed_1000_t": 2553.0,
+            "losses_1000_t": 567.0,
+            "processing_1000_t": 62928.0,
+            "other_uses_1000_t": null,
+            "food_share": 0.00011804633318577541,
+            "food_kcal_per_kg": 2363.93375
+        }
+    }
+}
