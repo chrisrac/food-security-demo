@@ -13,6 +13,7 @@ import json
 from shapely import wkt
 from matplotlib.path import Path
 from matplotlib.patches import PathPatch, Rectangle, Patch
+import base64
 
 st.set_page_config(
     page_title="Can You Feed a Country?",
@@ -638,6 +639,15 @@ def country_label(country):
         st.session_state.language
     ][country]
 
+def image_to_data_uri(path):
+
+    with open(path, "rb") as f:
+        encoded = base64.b64encode(
+            f.read()
+        ).decode()
+
+    return f"data:image/png;base64,{encoded}"
+
 def calculate_crop_calories(
     country,
     crop,
@@ -808,6 +818,14 @@ def render_language_switch():
         [6, 1.2, 1.2]
     )
 
+    us_flag = image_to_data_uri(
+        "assets/us.png"
+    )
+
+    italy_flag = image_to_data_uri(
+        "assets/it.png"
+    )
+
     with en_col:
 
         en_type = (
@@ -817,7 +835,7 @@ def render_language_switch():
         )
 
         st.button(
-            "🇬🇧 English",
+            f"![US]({us_flag}) English",
             type=en_type,
             use_container_width=True,
             key="language_en",
@@ -834,14 +852,14 @@ def render_language_switch():
         )
 
         st.button(
-            "🇮🇹 Italiano",
+            f"![IT]({italy_flag}) Italiano",
             type=it_type,
             use_container_width=True,
             key="language_it",
             on_click=set_language,
             args=("it",)
         )
-
+        
 def geometry_to_patch(geom, **kwargs):
     if geom.geom_type == "Polygon":
         compound_path = polygon_to_path(geom)
@@ -1047,6 +1065,7 @@ def plot_food_fill_in_country(geom, population_fraction):
 
     return fig
 
+
 def limit_crop_allocation(changed_crop):
     crop_keys = ["corn", "wheat", "soy"]
 
@@ -1101,22 +1120,32 @@ if st.session_state.screen == 1:
     render_progress()
     st.title(t("app_title"))
 
-if st.session_state.screen == 1:
-
     st.write(t("intro"))
 
     st.header(t("choose_country"))
 
-    def country_button(flag, name):
-        is_selected = (st.session_state.country == name)
+    def country_button(image_path, name):
+
+        is_selected = (
+            st.session_state.country == name
+        )
 
         display_name = country_label(name)
 
+        flag_uri = image_to_data_uri(image_path)
+
         if is_selected:
-            label = f"✓ {flag}  {display_name}"
+            label = (
+                f"![flag]({flag_uri}) "
+                f"✓ {display_name}"
+            )
             button_type = "primary"
+
         else:
-            label = f"{flag}  {display_name}"
+            label = (
+                f"![flag]({flag_uri}) "
+                f"{display_name}"
+            )
             button_type = "secondary"
 
         if st.button(
@@ -1132,19 +1161,19 @@ if st.session_state.screen == 1:
 
     with row1[0]:
         country_button(
-            "🇺🇸",
+            "assets/us.png",
             "United States"
         )
 
     with row1[1]:
         country_button(
-            "🇮🇹",
+            "assets/it.png",
             "Italy"
         )
 
     with row1[2]:
         country_button(
-            "🇮🇳",
+            "assets/in.png",
             "India"
         )
 
@@ -1152,19 +1181,19 @@ if st.session_state.screen == 1:
 
     with row2[0]:
         country_button(
-            "🇧🇷",
+            "assets/br.png",
             "Brazil"
         )
 
     with row2[1]:
         country_button(
-            "🇰🇪",
+            "assets/ke.png",
             "Kenya"
         )
 
     with row2[2]:
         country_button(
-            "🇦🇺",
+            "assets/au.png",
             "Australia"
         )
 
